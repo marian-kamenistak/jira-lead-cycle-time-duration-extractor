@@ -22,12 +22,12 @@ in your console, run:
 1. download the project using git
 2. install npm
 2. in the project folder, execute
-    ```npm install```
+```npm install```
 
 
 ## Run
-    ```npm run build```
-    ```npm run extactor```
+```npm run build```
+```npm run extactor```
 
 ## Additional
 Jira API doc: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-fields/#api-group-issue-fields

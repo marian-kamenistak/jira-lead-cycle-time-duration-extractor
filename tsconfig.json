@@ -1,0 +1,38 @@
+{
+  "version": "0.9.0",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "noImplicitReturns": true,
+    //"types": ["node"],
+    "skipLibCheck": true,
+    "lib": [
+      "dom",
+      "es2017",
+      "es2017.object" 
+    ]
+  },
+  "include": ["**/*.ts", "*.ts"],
+  "exclude": [
+    "node_modules",
+    "typings",
+    "typings/browser.d.ts",
+    "typings/browser",
+    "dist",
+    "test",
+    "tmp"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": { "rewriteTsconfig": false }
+}
+

@@ -1,0 +1,15 @@
+node_modules
+SF
+build
+dist
+.DS_Store
+.vscode
+*.yaml
+!config.yaml
+*.log
+regression
+tmp
+*.mac
+*.exe
+*.linux
+output.csv

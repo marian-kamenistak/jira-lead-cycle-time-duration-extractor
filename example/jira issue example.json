@@ -1,0 +1,871 @@
+{
+    "expand": "names,schema",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 1,
+    "issues": [
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10010.requestTypePractice,renderedFields",
+            "id": "27527",
+            "self": "https://jiradomain.atlassian.net/rest/api/3/issue/27527",
+            "key": "DPI-1292",
+            "changelog": {
+                "startAt": 0,
+                "maxResults": 14,
+                "total": 14,
+                "histories": [
+                    {
+                        "id": "182110",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=626b9a8cb31e6f006864054b",
+                            "accountId": "626b9a8cb31e6f006864054b",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/48",
+                                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/24",
+                                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/16",
+                                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/32"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-25T15:05:50.990+0200",
+                        "items": [
+                            {
+                                "field": "status",
+                                "fieldtype": "jira",
+                                "fieldId": "status",
+                                "from": "10011",
+                                "fromString": "In QA",
+                                "to": "10002",
+                                "toString": "Done"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "181999",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=626b9a8cb31e6f006864054b",
+                            "accountId": "626b9a8cb31e6f006864054b",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/48",
+                                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/24",
+                                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/16",
+                                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/32"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-25T14:13:08.585+0200",
+                        "items": [
+                            {
+                                "field": "assignee",
+                                "fieldtype": "jira",
+                                "fieldId": "assignee",
+                                "from": "63b2a7072c70aae1e6faa941",
+                                "fromString": "Vojtěch Chadima",
+                                "to": "626b9a8cb31e6f006864054b",
+                                "toString": "Jan Vondracek",
+                                "tmpFromAccountId": null,
+                                "tmpToAccountId": "626b9a8cb31e6f006864054b"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "174724",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=6065c10c95acf80071abe997",
+                            "accountId": "6065c10c95acf80071abe997",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6065c10c95acf80071abe997/d2a6d4bf-6f81-4e48-8e35-05c761f53cfe/48",
+                                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6065c10c95acf80071abe997/d2a6d4bf-6f81-4e48-8e35-05c761f53cfe/24",
+                                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6065c10c95acf80071abe997/d2a6d4bf-6f81-4e48-8e35-05c761f53cfe/16",
+                                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6065c10c95acf80071abe997/d2a6d4bf-6f81-4e48-8e35-05c761f53cfe/32"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-14T09:50:43.919+0200",
+                        "items": [
+                            {
+                                "field": "Fix Version",
+                                "fieldtype": "jira",
+                                "fieldId": "fixVersions",
+                                "from": null,
+                                "fromString": null,
+                                "to": "10210",
+                                "toString": "v1.86"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "174641",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                            "accountId": "63b2a7072c70aae1e6faa941",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-14T08:09:48.045+0200",
+                        "items": [
+                            {
+                                "field": "status",
+                                "fieldtype": "jira",
+                                "fieldId": "status",
+                                "from": "10002",
+                                "fromString": "Done",
+                                "to": "10011",
+                                "toString": "In QA"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "174558",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                            "accountId": "63b2a7072c70aae1e6faa941",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-13T17:49:36.208+0200",
+                        "items": [
+                            {
+                                "field": "status",
+                                "fieldtype": "jira",
+                                "fieldId": "status",
+                                "from": "10017",
+                                "fromString": "In Review",
+                                "to": "10002",
+                                "toString": "Done"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "174398",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                            "accountId": "63b2a7072c70aae1e6faa941",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-13T15:27:20.417+0200",
+                        "items": [
+                            {
+                                "field": "status",
+                                "fieldtype": "jira",
+                                "fieldId": "status",
+                                "from": "3",
+                                "fromString": "In Progress",
+                                "to": "10017",
+                                "toString": "In Review"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "173158",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                            "accountId": "63b2a7072c70aae1e6faa941",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-12T13:09:35.251+0200",
+                        "items": [
+                            {
+                                "field": "timeestimate",
+                                "fieldtype": "jira",
+                                "fieldId": "timeestimate",
+                                "from": null,
+                                "fromString": null,
+                                "to": "86400",
+                                "toString": "86400"
+                            },
+                            {
+                                "field": "timeoriginalestimate",
+                                "fieldtype": "jira",
+                                "fieldId": "timeoriginalestimate",
+                                "from": null,
+                                "fromString": null,
+                                "to": "86400",
+                                "toString": "86400"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "171905",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                            "accountId": "63b2a7072c70aae1e6faa941",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-11T12:55:37.852+0200",
+                        "items": [
+                            {
+                                "field": "priority",
+                                "fieldtype": "jira",
+                                "fieldId": "priority",
+                                "from": "10000",
+                                "fromString": "Not set",
+                                "to": "3",
+                                "toString": "Medium"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "171889",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                            "accountId": "63b2a7072c70aae1e6faa941",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-11T12:54:09.410+0200",
+                        "items": [
+                            {
+                                "field": "summary",
+                                "fieldtype": "jira",
+                                "fieldId": "summary",
+                                "from": null,
+                                "fromString": "Refactor OKTE contract generating",
+                                "to": null,
+                                "toString": "Refactor OKTE contract generation"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "171880",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                            "accountId": "63b2a7072c70aae1e6faa941",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-11T12:52:50.109+0200",
+                        "items": [
+                            {
+                                "field": "status",
+                                "fieldtype": "jira",
+                                "fieldId": "status",
+                                "from": "10014",
+                                "fromString": "Ready for Execution",
+                                "to": "3",
+                                "toString": "In Progress"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "171879",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                            "accountId": "63b2a7072c70aae1e6faa941",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-11T12:52:48.436+0200",
+                        "items": [
+                            {
+                                "field": "status",
+                                "fieldtype": "jira",
+                                "fieldId": "status",
+                                "from": "10000",
+                                "fromString": "Not Started",
+                                "to": "10014",
+                                "toString": "Ready for Execution"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "171875",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                            "accountId": "63b2a7072c70aae1e6faa941",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-11T12:52:17.936+0200",
+                        "items": [
+                            {
+                                "field": "Epic Link",
+                                "fieldtype": "custom",
+                                "fieldId": "customfield_10014",
+                                "from": null,
+                                "fromString": null,
+                                "to": "22158",
+                                "toString": "DPI-854"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "171873",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                            "accountId": "63b2a7072c70aae1e6faa941",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-11T12:52:17.923+0200",
+                        "items": [
+                            {
+                                "field": "IssueParentAssociation",
+                                "fieldtype": "jira",
+                                "from": null,
+                                "fromString": null,
+                                "to": "22158",
+                                "toString": "DPI-854"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "171872",
+                        "author": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                            "accountId": "63b2a7072c70aae1e6faa941",
+                            "emailAddress: "john@smith.com",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                                "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                            },
+                            "displayName: "John Smith",
+                            "active": true,
+                            "timeZone": "Europe/Prague",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2023-04-11T12:52:04.574+0200",
+                        "items": [
+                            {
+                                "field": "assignee",
+                                "fieldtype": "jira",
+                                "fieldId": "assignee",
+                                "from": null,
+                                "fromString": null,
+                                "to": "63b2a7072c70aae1e6faa941",
+                                "toString": "Vojtěch Chadima",
+                                "tmpFromAccountId": null,
+                                "tmpToAccountId": "63b2a7072c70aae1e6faa941"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "fields": {
+                "statuscategorychangedate": "2023-04-25T15:05:50.955+0200",
+                "parent": {
+                    "id": "22158",
+                    "key": "DPI-854",
+                    "self": "https://jiradomain.atlassian.net/rest/api/3/issue/22158",
+                    "fields": {
+                        "summary": "Apply IEPX contract generator approach to all ID exchanges",
+                        "status": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/status/10017",
+                            "description": "",
+                            "iconUrl": "https://jiradomain.atlassian.net/images/icons/statuses/generic.png",
+                            "name": "In Review",
+                            "id": "10017",
+                            "statusCategory": {
+                                "self": "https://jiradomain.atlassian.net/rest/api/3/statuscategory/4",
+                                "id": 4,
+                                "key": "indeterminate",
+                                "colorName": "yellow",
+                                "name": "In Progress"
+                            }
+                        },
+                        "priority": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/priority/2",
+                            "iconUrl": "https://jiradomain.atlassian.net/images/icons/priorities/high.svg",
+                            "name": "High",
+                            "id": "2"
+                        },
+                        "issuetype": {
+                            "self": "https://jiradomain.atlassian.net/rest/api/3/issuetype/10000",
+                            "id": "10000",
+                            "description": "A collection of related bugs, stories, and tasks.",
+                            "iconUrl": "https://jiradomain.atlassian.net/images/icons/issuetypes/epic.svg",
+                            "name": "Epic",
+                            "subtask": false,
+                            "hierarchyLevel": 1
+                        }
+                    }
+                },
+                "customfield_10190": null,
+                "customfield_10070": null,
+                "customfield_10191": null,
+                "customfield_10192": null,
+                "customfield_10193": null,
+                "customfield_10072": null,
+                "customfield_10073": null,
+                "customfield_10194": null,
+                "customfield_10074": null,
+                "customfield_10195": null,
+                "customfield_10196": null,
+                "customfield_10075": null,
+                "customfield_10197": null,
+                "customfield_10076": null,
+                "customfield_10110": null,
+                "customfield_10077": null,
+                "fixVersions": [
+                    {
+                        "self": "https://jiradomain.atlassian.net/rest/api/3/version/10210",
+                        "id": "10210",
+                        "description": "",
+                        "name": "v1.86",
+                        "archived": false,
+                        "released": true,
+                        "releaseDate": "2023-04-17"
+                    }
+                ],
+                "customfield_10199": {
+                    "self": "https://jiradomain.atlassian.net/rest/api/3/customFieldOption/10323",
+                    "value": "No",
+                    "id": "10323"
+                },
+                "resolution": null,
+                "customfield_10113": null,
+                "customfield_10114": null,
+                "customfield_10109": null,
+                "lastViewed": "2023-05-04T10:56:08.390+0200",
+                "customfield_10180": null,
+                "customfield_10060": null,
+                "customfield_10181": null,
+                "customfield_10061": null,
+                "customfield_10182": null,
+                "customfield_10062": null,
+                "customfield_10183": null,
+                "customfield_10063": null,
+                "customfield_10184": null,
+                "customfield_10185": null,
+                "customfield_10064": null,
+                "customfield_10186": null,
+                "customfield_10065": null,
+                "customfield_10187": null,
+                "customfield_10066": null,
+                "customfield_10067": null,
+                "priority": {
+                    "self": "https://jiradomain.atlassian.net/rest/api/3/priority/3",
+                    "iconUrl": "https://jiradomain.atlassian.net/images/icons/priorities/major.svg",
+                    "name": "Medium",
+                    "id": "3"
+                },
+                "customfield_10188": null,
+                "customfield_10068": null,
+                "customfield_10189": null,
+                "customfield_10069": null,
+                "labels": [],
+                "aggregatetimeoriginalestimate": 86400,
+                "timeestimate": 86400,
+                "versions": [],
+                "issuelinks": [],
+                "assignee": {
+                    "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=626b9a8cb31e6f006864054b",
+                    "accountId": "626b9a8cb31e6f006864054b",
+                    "emailAddress: "john@smith.com",
+                    "avatarUrls": {
+                        "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/48",
+                        "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/24",
+                        "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/16",
+                        "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/626b9a8cb31e6f006864054b/d3ae6ec1-2595-48c7-a632-7c66d3c72999/32"
+                    },
+                    "displayName: "John Smith",
+                    "active": true,
+                    "timeZone": "Europe/Prague",
+                    "accountType": "atlassian"
+                },
+                "status": {
+                    "self": "https://jiradomain.atlassian.net/rest/api/3/status/10002",
+                    "description": "",
+                    "iconUrl": "https://jiradomain.atlassian.net/",
+                    "name": "Done",
+                    "id": "10002",
+                    "statusCategory": {
+                        "self": "https://jiradomain.atlassian.net/rest/api/3/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                },
+                "components": [],
+                "customfield_10170": null,
+                "customfield_10171": null,
+                "customfield_10051": null,
+                "customfield_10052": null,
+                "customfield_10173": null,
+                "customfield_10053": null,
+                "customfield_10174": null,
+                "customfield_10054": null,
+                "customfield_10175": null,
+                "customfield_10176": null,
+                "customfield_10055": null,
+                "customfield_10056": null,
+                "customfield_10177": null,
+                "customfield_10178": null,
+                "customfield_10179": null,
+                "customfield_10058": null,
+                "customfield_10059": null,
+                "customfield_10049": null,
+                "aggregatetimeestimate": 86400,
+                "creator": {
+                    "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                    "accountId": "63b2a7072c70aae1e6faa941",
+                    "emailAddress: "john@smith.com",
+                    "avatarUrls": {
+                        "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                        "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                        "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                        "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                    },
+                    "displayName: "John Smith",
+                    "active": true,
+                    "timeZone": "Europe/Prague",
+                    "accountType": "atlassian"
+                },
+                "subtasks": [],
+                "customfield_10160": null,
+                "customfield_10161": null,
+                "customfield_10162": null,
+                "customfield_10163": null,
+                "reporter": {
+                    "self": "https://jiradomain.atlassian.net/rest/api/3/user?accountId=63b2a7072c70aae1e6faa941",
+                    "accountId": "63b2a7072c70aae1e6faa941",
+                    "emailAddress: "john@smith.com",
+                    "avatarUrls": {
+                        "48x48": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                        "24x24": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                        "16x16": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png",
+                        "32x32": "https://secure.gravatar.com/avatar/601fe2fc49a34e685d4c1468f8cf2cb5?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVC-3.png"
+                    },
+                    "displayName: "John Smith",
+                    "active": true,
+                    "timeZone": "Europe/Prague",
+                    "accountType": "atlassian"
+                },
+                "customfield_10164": null,
+                "customfield_10165": null,
+                "aggregateprogress": {
+                    "progress": 0,
+                    "total": 86400,
+                    "percent": 0
+                },
+                "customfield_10166": null,
+                "customfield_10045": null,
+                "customfield_10167": null,
+                "customfield_10200": null,
+                "customfield_10046": null,
+                "customfield_10047": null,
+                "customfield_10168": null,
+                "customfield_10201": null,
+                "customfield_10048": null,
+                "customfield_10202": null,
+                "customfield_10169": null,
+                "customfield_10159": null,
+                "progress": {
+                    "progress": 0,
+                    "total": 86400,
+                    "percent": 0
+                },
+                "votes": {
+                    "self": "https://jiradomain.atlassian.net/rest/api/3/issue/DPI-1292/votes",
+                    "votes": 0,
+                    "hasVoted": false
+                },
+                "issuetype": {
+                    "self": "https://jiradomain.atlassian.net/rest/api/3/issuetype/10002",
+                    "id": "10002",
+                    "description": "A small, distinct piece of work.",
+                    "iconUrl": "https://jiradomain.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+                    "name": "Task",
+                    "subtask": false,
+                    "avatarId": 10318,
+                    "hierarchyLevel": 0
+                },
+                "timespent": null,
+                "customfield_10150": null,
+                "project": {
+                    "self": "https://jiradomain.atlassian.net/rest/api/3/project/10045",
+                    "id": "10045",
+                    "key": "DPI",
+                    "name": "DEV PWR ID",
+                    "projectTypeKey": "software",
+                    "simplified": false,
+                    "avatarUrls": {
+                        "48x48": "https://jiradomain.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10555",
+                        "24x24": "https://jiradomain.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10555?size=small",
+                        "16x16": "https://jiradomain.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10555?size=xsmall",
+                        "32x32": "https://jiradomain.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10555?size=medium"
+                    }
+                },
+                "customfield_10031": null,
+                "customfield_10152": null,
+                "customfield_10153": null,
+                "customfield_10032": [],
+                "customfield_10033": null,
+                "customfield_10154": null,
+                "customfield_10034": null,
+                "customfield_10155": null,
+                "aggregatetimespent": null,
+                "customfield_10156": null,
+                "customfield_10035": null,
+                "customfield_10157": null,
+                "customfield_10036": null,
+                "customfield_10037": null,
+                "customfield_10158": null,
+                "customfield_10148": null,
+                "customfield_10149": null,
+                "resolutiondate": null,
+                "workratio": 0,
+                "watches": {
+                    "self": "https://jiradomain.atlassian.net/rest/api/3/issue/DPI-1292/watchers",
+                    "watchCount": 2,
+                    "isWatching": false
+                },
+                "created": "2023-04-11T12:51:44.316+0200",
+                "customfield_10020": null,
+                "customfield_10021": null,
+                "customfield_10022": null,
+                "customfield_10143": null,
+                "customfield_10144": null,
+                "customfield_10023": null,
+                "customfield_10145": null,
+                "customfield_10024": "2023-04-25T15:05:48.691+0200",
+                "customfield_10025": null,
+                "customfield_10146": null,
+                "customfield_10147": null,
+                "customfield_10016": null,
+                "customfield_10017": null,
+                "customfield_10018": {
+                    "hasEpicLinkFieldDependency": false,
+                    "showField": false,
+                    "nonEditableReason": {
+                        "reason": "EPIC_LINK_SHOULD_BE_USED",
+                        "message": "To set an epic as the parent, use the epic link instead"
+                    }
+                },
+                "customfield_10139": null,
+                "customfield_10019": "0|i02q5j:",
+                "updated": "2023-04-25T15:05:50.955+0200",
+                "timeoriginalestimate": 86400,
+                "description": null,
+                "customfield_10130": null,
+                "customfield_10010": null,
+                "customfield_10131": null,
+                "customfield_10132": null,
+                "customfield_10133": null,
+                "customfield_10134": [],
+                "customfield_10014": "DPI-854",
+                "customfield_10015": null,
+                "customfield_10005": null,
+                "customfield_10126": null,
+                "customfield_10006": null,
+                "customfield_10127": null,
+                "customfield_10007": null,
+                "security": null,
+                "customfield_10128": null,
+                "customfield_10129": null,
+                "customfield_10008": null,
+                "customfield_10009": null,
+                "summary": "Refactor OKTE contract generation",
+                "customfield_10081": null,
+                "customfield_10083": null,
+                "customfield_10084": null,
+                "customfield_10085": null,
+                "customfield_10086": {
+                    "version": 1,
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Repro steps"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "orderedList",
+                            "attrs": {
+                                "order": 1
+                            },
+                            "content": [
+                                {
+                                    "type": "listItem",
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "content": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Step1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Expected results"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Actual results"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Notes"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "customfield_10120": null,
+                "customfield_10087": null,
+                "customfield_10000": "{build={count=6, dataType=build, failedBuildCount=0, successfulBuildCount=6, unknownBuildCount=0}, repository={count=5, dataType=repository}, json={\"cachedValue\":{\"errors\":[],\"summary\":{\"repository\":{\"overall\":{\"count\":5,\"lastUpdated\":\"2023-04-13T21:15:17.000+0200\",\"dataType\":\"repository\"},\"byInstanceType\":{\"GitLab\":{\"count\":5,\"name\":\"GitLab\"}}},\"build\":{\"overall\":{\"count\":6,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":6,\"unknownBuildCount\":0,\"dataType\":\"build\"},\"byInstanceType\":{\"cloud-providers\":{\"count\":6,\"name\":\"Other providers\"}}}}},\"isStale\":true}}",
+                "customfield_10088": null,
+                "customfield_10121": null,
+                "customfield_10001": null,
+                "customfield_10089": null,
+                "customfield_10122": null,
+                "customfield_10123": null,
+                "customfield_10002": null,
+                "customfield_10003": null,
+                "customfield_10124": null,
+                "customfield_10125": null,
+                "customfield_10004": null,
+                "customfield_10115": null,
+                "customfield_10116": null,
+                "customfield_10117": null,
+                "environment": null,
+                "customfield_10118": null,
+                "customfield_10119": null,
+                "duedate": null
+            }
+        }
+    ]
+}

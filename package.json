@@ -1,7 +1,7 @@
 {
   "name": "jira-data-extractor",
   "version": "2.1.7",
-  "description": "Tool extracts data from JIRA into csv. It automatically includes basic data and flow status/stage start dates and durations. Therefore cycle time and lead time is easily calculated.",
+  "description": "Tool to extract data from JIRA into Excel or csv. It automatically includes basic data and flow status/stage start dates and durations. Therefore cycle time and lead time is easily calculated.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "__type": "module",

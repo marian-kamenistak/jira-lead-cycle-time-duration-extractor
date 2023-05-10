@@ -24,9 +24,8 @@ Connection:
 
 
 JQL: 
-    #Query: created >= -30d order by created DESC
-    #Query: key=EPM-197
-    Query: project in ("DEV EPM", "DEV PWR ID")
+    Query: created >= -365d order by created DESC
+    #Query: key=DEV-197
         
 
 # Map field names to additional attributes to extract

@@ -32,7 +32,7 @@ in different visualization tools, such as Tableau, Looker, Power BI, etc.
 
 ***
 
-# Configuration: 
+# Configuration
 
 Edit config.yaml file
 
@@ -106,13 +106,13 @@ For more information about Jira fields and the structure, see Jira doc: Jira API
 
 
 # Install
-1. download the project using git
-2. install npm
-2. in the project folder, execute
+1. Clone the project using git to your local device
+2. install npm tool
+2. in the project folder, install all the dependent packages
 
        npm install
 
-# Run
+# Run the tool
 
     npm run build
     npm run extact
@@ -129,4 +129,4 @@ These flags are the same whether you are using the standalone executable or node
 
 To run the tool with parameters, use the following scheme:
 
-  npm run extract -- --i SF/config.yaml
+    npm run extract -- --i SF/config.yaml

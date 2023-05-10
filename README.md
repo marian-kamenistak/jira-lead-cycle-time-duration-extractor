@@ -1,58 +1,67 @@
 # README #
 
-All the Jira fields, state/stage durations and start dates are extracted automatically to Excel/csv file with no further setting.
-
-Pic here
+Production-ready. The tool extracts all the Jira fields to Excel/csv format, 
+**including state/stage durations and start dates** with no further setting required. 
 
 # Output
-See https://github.com/marian-kamenistak/jira-data-extractor/blob/main/example/output%20example.csv file to see an example of a generated output file.
+See an example of a generated output file in [examples/output.csv](https://github.com/marian-kamenistak/jira-data-extractor/blob/main/example/output%20example.csv).
+
+![data](example/img/data%20table.png)
 
 
 # Analytics
-Having data, we can explore/analyse in different visualization tools, such as Tableau, Looker, Power BI, etc.
+With obtained data, we can explore/analyse teams efficiency metrics
+ - Lead time
+ - Cycle time
+ - Throughput
+ - Velocity
+ 
+in different visualization tools, such as Tableau, Looker, Power BI, etc.
 
-Pics here.
+![histogram](example/img/cycle%20time%20histogram.png)
 
 
+***
 
+# Configuration: 
 
-# Configuration: edit config.yaml file
+Edit config.yaml file
 
 In order for this utility to run properly, you must create a config file that contains the parameters of your Jira instance, and the necessary details of your workflow. The config file is what tells the executuable what Jira instance to connect to, what data to grab, and how to format the resultant file to be uploaded into the ActionableAgile Analytics tool.
 
-The config file we use conforms to the YAML format standard (http://yaml.org/spec/) and is completely case sensitive. You can find an example config file here: https://github.com/marian-kamenistak/jira-data-extractor/blob/main/config.yaml. Feel free to follow along with that example as we run through the details of each section of the file.
+The config file we use conforms to the YAML format standard (http://yaml.org/spec/) and is completely case sensitive. You can find an example config file here: [config.yaml](https://github.com/marian-kamenistak/jira-data-extractor/blob/main/config.yaml). Feel free to follow along with that example as we run through the details of each section of the file.
 
 
 ## Connection
 
-Connection:
-    Domain: https://<subdomain>.atlassian.net/ Open Jira in your browser and see the domain.
-    Username: <email>
-    Password: <Jira API token> your Jira API Token can be generated at https://id.atlassian.com/manage-profile/security/api-tokens
+    Connection:
+        Domain: https://<subdomain>.atlassian.net/ Open Jira in your browser and see the domain.
+        Username: <email>
+        Password: <Jira API token> your Jira API Token can be generated at https://id.atlassian.com/manage-profile/security/api-tokens
 
-*OAuth Support*
-OAuth is now supported. You must get the access token and access token secret on your own by completing the OAuth authorization.
+### OAuth Support
+OAuth is also supported. You must get the access token and access token secret on your own by completing the OAuth authorization.
 
-This application's OAuth configutation requires five inputs: Domain, Consumer Key, Private Key, Token, and Token Secret: Domain: The url to the domain where your Jira instance is hosted Consumer Key: This is the user-specified application key inside JIRA Private Key: Your private key for the JIRA OAuth Token: OAuth Access Token Token Secret: OAuth Access Token Secret
-
-Connection:
-    Domain: https://myjiradomain.com
-    Consumer Key: applicationkey
-    Private Key: 
-    Token: 
-    Token Secret: 
+    Connection:
+        Domain: https://myjiradomain.com
+        Consumer Key: applicationkey
+        Private Key: 
+        Token: 
+        Token Secret: 
 
 ### Jira connection test
 in your console, run:
-```curl -v https://<subdomain>.atlassian.net/ --user <email>:<Jira API token>```
+
+    curl -v https://<subdomain>.atlassian.net/ --user <email>:<Jira API token>
 
 
 ## Jira issues selection
 is driven by a JQL statement. Examples:
-JQL: 
-    Query: created >= -30d order by created DESC
-    Query: key=EPM-197
-    Query: project in ("Team A", "Team B")
+
+    JQL: 
+        Query: created >= -30d order by created DESC
+        Query: key=EPM-197
+        Query: project in ("Team A", "Team B")
     
 To create the right JQL query, open Jira -> Filter -> 'Advanced issue search' and build the query.
 
@@ -62,37 +71,40 @@ The Attributes Section of the config file is simply named "Attributes" (without 
 
 Here are the standard Jira fields that you can use:
 
-Attributes:
-      Stage: status.name      
-      StatusCategory: status.statusCategory.name    
-      Level: priority.name
-      Labels: labels
-      Components: components.name
-      Version: fixVersions.last.name
-      VersionRelease: fixVersions.last.releaseDate
-      ParentId: parent.key
-      ParentName: parent.fields.summary
-      ParentType: parent.fields.issuetype.name
+    Attributes:
+          Stage: status.name      
+          StatusCategory: status.statusCategory.name    
+          Level: priority.name
+          Labels: labels
+          Components: components.name
+          Version: fixVersions.last.name
+          VersionRelease: fixVersions.last.releaseDate
+          ParentId: parent.key
+          ParentName: parent.fields.summary
+          ParentType: parent.fields.issuetype.name
 
 In order to add more of your custom parameters, see what other data fields an issue contains. You can use 
 
-curl --request GET \
-  --url 'https://your-domain.atlassian.net/rest/api/3/issue/{issueIdOrKey}' \
-  --user 'email@example.com:<api_token>' \
-  --header 'Accept: application/json'
+    curl --request GET \
+      --url 'https://your-domain.atlassian.net/rest/api/3/issue/{issueIdOrKey}' \
+      --user 'email@example.com:<api_token>' \
+      --header 'Accept: application/json'
 
+
+***
 
 
 # Install
 1. download the project using git
 2. install npm
 2. in the project folder, execute
-```npm install```
 
+       npm install
 
 # Run
-```npm run build```
-```npm run extact```
+
+    npm run build
+    npm run extact
 
 
 ## Run configuration parameters

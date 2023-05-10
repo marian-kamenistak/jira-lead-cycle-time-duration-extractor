@@ -91,6 +91,8 @@ In order to add more of your custom parameters, see what other data fields an is
       --header 'Accept: application/json'
 
 
+For more information about Jira fields and the structure, see Jira doc: Jira API doc: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-fields/#api-group-issue-fields
+
 ***
 
 
@@ -117,10 +119,5 @@ These flags are the same whether you are using the standalone executable or node
 -p specifies the password for the connection to Jira (by default the password in the config.yaml is used)
 
 To run the tool with parameters, use the following scheme:
-```npm run extract -- --i SF/config.yaml```
 
-
-
-# Additional
-Jira API doc: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-fields/#api-group-issue-fields
-
+  npm run extract -- --i SF/config.yaml

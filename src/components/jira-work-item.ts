@@ -26,16 +26,23 @@ class JiraWorkItem  {
   toCSV(config: JiraExtractorConfig, stageNames:string[]): string[] {
     let line:string[] = [this.id, `${config.connection.url}/browse/${this.id}`, this.name, this.type];
 
-    
+    // add duration days:
     stageNames.forEach(stageName => {
       line.push(this.stages.has(stageName) && this.stages.get(stageName).durationDays > 0 ? ''+this.stages.get(stageName).durationDays : '');
     });
+
+    // add stage dates and recurrence count:
+    const latestStageDates:string[] = [];
+    const stageRecurrence:string[] = [];
     stageNames.forEach(stageName => {
       const dates:Array<Date> = !this.stages.has(stageName) || this.stages.get(stageName).fromDates === undefined || this.stages.get(stageName).fromDates == null ? new Array() : this.stages.get(stageName).fromDates;
       const datesStr:string[] = dates.map((a) => dateToString(a));
-      line.push(datesStr.length > 0 ? datesStr[datesStr.length-1]:'');
+      latestStageDates.push(datesStr.length > 0 ? datesStr[datesStr.length-1]:''); // latest date
+      stageRecurrence.push(datesStr.length > 0 ? ''+datesStr.length:''); // recurrence count
     });
+    line = line.concat(latestStageDates, stageRecurrence);
 
+    // add attributes:
     const attributeKeys = this.attributes ? Object.keys(this.attributes) : [];
     for (let index = 0; index < attributeKeys.length; index++) {
       const attributeKey = attributeKeys[index];

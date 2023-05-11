@@ -100,6 +100,11 @@ class JiraExtractor {
     return stageNames.map((a) => `Stage ${a} start`);
   }
 
+  private getHeaderStageRecurrenceNames(stageNames:string[]):string[]{
+    return stageNames.map((a) => `Stage ${a} recurrence`);
+  }
+
+
   toCSV(workItems: JiraWorkItem[]) {
     const SEP:string = ';';
 
@@ -107,10 +112,12 @@ class JiraExtractor {
     let stageNames:string[] = this.getStageNames(workItems);
     let stageHeaderStageNames:string[] = this.getHeaderStageNames(stageNames);
     let stageHeaderStageStartNames:string[] = this.getHeaderStageStartDateNames(stageNames);
+    let stageRecurrenceNames:string[] = this.getHeaderStageRecurrenceNames(stageNames);
+    
 
 
     let headerArr:string[] = ["ID","Link","Name","Type"];
-    headerArr = headerArr.concat(stageHeaderStageNames, stageHeaderStageStartNames, Object.keys(attributes));
+    headerArr = headerArr.concat(stageHeaderStageNames, stageHeaderStageStartNames, stageRecurrenceNames, Object.keys(attributes));
     headerArr = headerArr.map((a) => JiraWorkItem.cleanString(a));
     const header = headerArr.join(SEP);
     const body = workItems.map(item => item.toCSV(this.config, stageNames).join(SEP)).reduce((res, cur) => `${res + cur}\n`, '');

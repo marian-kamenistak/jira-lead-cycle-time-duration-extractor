@@ -25,7 +25,7 @@ const parseArray = (nextData:any, lastNodesKey:string[]) => {
       : 
       (lastNodesKey && lastNodesKey.length >= 2 ? parsedArrayValues.map(e => parseLeafAttribute(e, lastNodesKey[1])) : JSON.stringify(parsedArrayValues)));
   }
-  return Array.isArray(nextData) ? (nextData.length === 0 ? '' : (nextData.length === 1 ? nextData[0] :  JSON.stringify(nextData))) : nextData;
+  return nextData;
 }
 
 
@@ -45,7 +45,7 @@ const getAttributes = (fields: any, attributesRequested: string[]): { [val: stri
       nextData = nextData[nextNodeKey];
       if(nextData !== undefined && Array.isArray(nextData)){
         const lastNodesKey:string[] = i < nestedAttrKeys.length-1 ? nestedAttrKeys.slice(i+1, nestedAttrKeys.length) : null;
-        if(lastNodesKey && lastNodesKey.length === 2 && lastNodesKey[0] === 'outwardIssue'){ //TODO: fix the hack the filter for cloning issues only.
+        if(lastNodesKey && lastNodesKey.length >= 1 && lastNodesKey[1] === 'outwardIssue'){ //TODO: fix the hack the filter for cloning issues only.
           nextData = nextData.filter(e => e.type?.outward === 'clones');
         }
         nextData = parseArray(nextData, lastNodesKey);

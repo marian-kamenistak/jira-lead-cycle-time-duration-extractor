@@ -57,7 +57,7 @@
     "inquirer": "^1.2.2",
     "js-yaml": "^3.6.1",
     "moment": "^2.15.1",
-    "node-fetch": "^3.3.1",
+    "node-fetch": "2.6.1",
     "progress": "^1.1.8",
     "request": "^2.75.0",
     "typescript": "^3.9.10",

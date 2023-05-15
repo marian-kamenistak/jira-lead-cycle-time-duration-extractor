@@ -1,12 +1,17 @@
 import fetch from 'node-fetch';
 import { writeFile } from 'fs';
 
-const id = "DPI-1026";//"DPI-1292";
-fetch('https://<jira subdomain>.atlassian.net/rest/api/3/search?jql=key%3D'+id+'&expand=changelog', {
+const args = process.argv;
+const id:string = args[2];//"DEV-1292";
+const domain:string = args[3];
+const username:string = args[4];
+const pwd:string = args[5];
+
+fetch(`${domain}/rest/api/3/search?jql=key%3D${id}&expand=changelog`, {
   method: 'GET',
   headers: {
     'Authorization': `Basic ${Buffer.from(
-      '<email>:<Jira API Token>'
+      username+":"+pwd
     ).toString('base64')}`,
     'Accept': 'application/json'
   }

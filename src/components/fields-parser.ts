@@ -13,16 +13,19 @@ const parseLeafAttribute = (attribute: any, customProp?: string): string => {
   }
 };
 
-const parseArray = (nextData:any, lastNodeKey:string) => {
+const parseArray = (nextData:any, lastNodesKey:string[]) => {
+  const lastNodeKey:string = lastNodesKey && lastNodesKey.length > 0 ? lastNodesKey[0] : null;
   if(lastNodeKey === 'last'){
     nextData = nextData.length > 0 ? nextData[nextData.length-1] : undefined; // pick the latest value
   }else if(lastNodeKey === 'first'){
       nextData = nextData.length > 0 ? nextData[0] : undefined; // pick the first value
   }else{
     const parsedArrayValues: string[] = nextData.map(e => parseLeafAttribute(e, lastNodeKey));
-    nextData = parsedArrayValues.length === 0 ? '' : (parsedArrayValues.length === 1 ? parsedArrayValues[0] : JSON.stringify(parsedArrayValues));
+    nextData = parsedArrayValues.length === 0 ? '' : (parsedArrayValues.length === 1 ? parsedArrayValues[0] 
+      : 
+      (lastNodesKey && lastNodesKey.length >= 2 ? parsedArrayValues.map(e => parseLeafAttribute(e, lastNodesKey[1])) : JSON.stringify(parsedArrayValues)));
   }
-  return nextData;
+  return Array.isArray(nextData) ? (nextData.length === 0 ? '' : (nextData.length === 1 ? nextData[0] :  JSON.stringify(nextData))) : nextData;
 }
 
 
@@ -41,9 +44,12 @@ const getAttributes = (fields: any, attributesRequested: string[]): { [val: stri
       }
       nextData = nextData[nextNodeKey];
       if(nextData !== undefined && Array.isArray(nextData)){
-        const lastNodeKey:string = i < nestedAttrKeys.length-1 ? nestedAttrKeys[i+1] : null;
-        nextData = parseArray(nextData, lastNodeKey);
-        if(lastNodeKey){
+        const lastNodesKey:string[] = i < nestedAttrKeys.length-1 ? nestedAttrKeys.slice(i+1, nestedAttrKeys.length) : null;
+        if(lastNodesKey && lastNodesKey.length === 2 && lastNodesKey[0] === 'outwardIssue'){ //TODO: fix the hack the filter for cloning issues only.
+          nextData = nextData.filter(e => e.type?.outward === 'clones');
+        }
+        nextData = parseArray(nextData, lastNodesKey);
+        if(lastNodesKey){
           i++;
         }
       }

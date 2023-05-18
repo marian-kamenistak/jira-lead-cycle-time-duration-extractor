@@ -26,6 +26,7 @@ Connection:
 JQL: 
     Query: created >= -365d order by created DESC
     #Query: key=DEV-197
+    #Query: project in ("DEV1", "DEV2")
         
 
 # Map field names to additional attributes to extract
@@ -40,6 +41,7 @@ Attributes:
       ParentId: parent.key
       ParentName: parent.fields.summary
       ParentType: parent.fields.issuetype.name
-      Timeoriginalestimate: timeoriginalestimate
-      Environment: customfield_10081.last.value
-      Platform: customfield_10084.last.value
+      LinksTo: issuelinks.first.outwardIssue.key
+      #Timeoriginalestimate: timeoriginalestimate
+      #Environment: customfield_10081.last.value
+      #Platform: customfield_10084.last.value

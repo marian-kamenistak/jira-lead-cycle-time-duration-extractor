@@ -45,8 +45,8 @@ const getAttributes = (fields: any, attributesRequested: string[]): { [val: stri
       nextData = nextData[nextNodeKey];
       if(nextData !== undefined && Array.isArray(nextData)){
         const lastNodesKey:string[] = i < nestedAttrKeys.length-1 ? nestedAttrKeys.slice(i+1, nestedAttrKeys.length) : null;
-        if(lastNodesKey && lastNodesKey.length >= 1 && lastNodesKey[1] === 'outwardIssue'){ //TODO: fix the hack the filter for cloning issues only.
-          nextData = nextData.filter(e => e.type?.outward === 'clones');
+        if(nextData && nextData.length > 0 && lastNodesKey && lastNodesKey.length >= 1 && lastNodesKey[1] === 'outwardIssue'){ //TODO: fix the hack how we filter linked issues.
+          nextData = nextData.filter(e => (e.type?.outward === undefined || e.type?.outward == null));// e.type?.outward !== 'clones'
         }
         nextData = parseArray(nextData, lastNodesKey);
         if(lastNodesKey){

@@ -1,7 +1,7 @@
 # README #
 
-Production-ready. The tool extracts all the Jira fields to Excel/csv format, 
-**including state/stage durations and start dates** with no further setting required. 
+Production-ready. This is a tool designed to extract data from JIRA and convert it into Excel or CSV format. It automates the inclusion of essential data and **enhances it with flow status or stage start dates and durations with no further setting required**. Consequently, it enables easy calculation and visualization of **cycle time, lead time, and velocity**.
+
 
 # Output
 See an example of a generated output file in [examples/output.csv](https://github.com/marian-kamenistak/jira-data-extractor/blob/main/example/output%20example.csv).

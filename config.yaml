@@ -41,7 +41,9 @@ Attributes:
       ParentId: parent.key
       ParentName: parent.fields.summary
       ParentType: parent.fields.issuetype.name
-      LinksTo: issuelinks.first.outwardIssue.key
+      AssigneeName: assignee.displayName
+      LinksToOutwardKey: issuelinks.first.outwardIssue.key
+      LinksToInwardKey: issuelinks.first.inwardIssue.key
       #Timeoriginalestimate: timeoriginalestimate
       #Environment: customfield_10081.last.value
       #Platform: customfield_10084.last.value

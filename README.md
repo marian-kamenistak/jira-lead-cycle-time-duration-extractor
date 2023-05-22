@@ -104,15 +104,17 @@ For more information about Jira fields and the structure, see Jira doc: Jira API
 
 
 # Install
-1. Clone the project using git to your local device
-2. install npm tool
-2. in the project folder, install all the dependent packages
+1. Install git from https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+2. Clone the project using git to your local device using command ```git clone https://github.com/ActionableAgile/jira-to-analytics.git```
+3. install npm tool from https://nodejs.org/en/download
+4. in the project folder, install all the dependent packages using command
 
-       npm install
+    npm install
 
 # Run the tool
 
     npm run build
+    configure the config.yaml file for your connection
     npm run extact
 
 

@@ -19,16 +19,17 @@ With obtained data, we can explore/analyse teams efficiency metrics
 in different visualization tools, such as Tableau, Looker, Power BI, etc.
 
 ### Cycle time drill-down
+Spread between development, code review, testing, validation and deployment.
 ![histogram](example/img/cycle%20time.png)
 ### Cycle time histogram
+What is our median cycle time, how many issues we deliver on daily basis, 90th percentile delivery, and outliers.
 ![histogram](example/img/cycle%20time%20histogram.png)
 ### Roadmap balance
+Where we invest our talent
 ![histogram](example/img/roadmap%20balance.png)
 ### Investment allocation
+Where we invest our talent
 ![Investment](example/img/investment%20allocation.png)
-### Quarterly Roadmap execution
-![Roadmap](example/img/roadmap%20delivery.png)
-
 
 ***
 

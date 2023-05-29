@@ -51,9 +51,12 @@ There are two options for running this extract utility: either as a standalone e
 3. install npm tool from https://nodejs.org/en/download
 4. in the project folder, install all the dependent packages using command
 
-    npm install
+    npm install    
+    
     npm run build
+    
     configure the config.yaml file for your connection
+    
     npm run extact
 
 
@@ -61,7 +64,9 @@ There are two options for running this extract utility: either as a standalone e
 These flags are the same whether you are using the standalone executable or node form of the extraction tool.
 
 -i specifies input config file name (defaults to config.yaml)
+
 -u specifies the username for the connection to Jira (by default the username in the config.yaml is used)
+
 -p specifies the password for the connection to Jira (by default the password in the config.yaml is used)
 
 ***

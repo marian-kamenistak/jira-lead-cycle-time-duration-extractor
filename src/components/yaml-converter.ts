@@ -1,6 +1,6 @@
 import { JiraExtractorConfig } from '../types';
 
-const buildOAuth = (oauthYamlObj) => {
+const buildOAuth = (oauthYamlObj:any) => {
   return {
     consumer_key: oauthYamlObj['Consumer Key'],
     private_key: oauthYamlObj['Private Key'],

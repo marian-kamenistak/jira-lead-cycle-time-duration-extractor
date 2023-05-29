@@ -20,7 +20,7 @@ const parseArray = (nextData:any, lastNodesKey:string[]) => {
   }else if(lastNodeKey === 'first'){
       nextData = nextData.length > 0 ? nextData[0] : undefined; // pick the first value
   }else{
-    const parsedArrayValues: string[] = nextData.map(e => parseLeafAttribute(e, lastNodeKey));
+    const parsedArrayValues: string[] = nextData.map((e: any) => parseLeafAttribute(e, lastNodeKey));
     nextData = parsedArrayValues.length === 0 ? '' : (parsedArrayValues.length === 1 ? parsedArrayValues[0] 
       : 
       (lastNodesKey && lastNodesKey.length >= 2 ? parsedArrayValues.map(e => parseLeafAttribute(e, lastNodesKey[1])) : JSON.stringify(parsedArrayValues)));
@@ -30,7 +30,7 @@ const parseArray = (nextData:any, lastNodesKey:string[]) => {
 
 
 const getAttributes = (fields: any, attributesRequested: string[]): { [val: string]: string } => {
-  return attributesRequested.reduce((attributesMap, attributeSystemName) => {
+  return attributesRequested.reduce((attributesMap:any, attributeSystemName:string) => {
     let nestedAttrKeys: string[] = attributeSystemName.split('.');
     const isNested:boolean = nestedAttrKeys.length > 1;
     if(!isNested){

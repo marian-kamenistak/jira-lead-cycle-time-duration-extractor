@@ -27,9 +27,9 @@ const configureGetOptions = (url: string, auth: Auth): any => {
   return options;
 };
 
-const getAsync = async (options): Promise<any>  => {
+const getAsync = async (options:any): Promise<any>  => {
   return new Promise((accept, reject) => {
-    get(options, (error, response, body) => {
+    get(options, (error:any, response:any, body:any) => {
       if (error) {
         console.log(`Error fetching json from ${options.url}`);
         reject(new Error(error));
@@ -45,7 +45,7 @@ const getAsync = async (options): Promise<any>  => {
   });
 };
 
-const getJson = async (url, auth) => {
+const getJson = async (url:any, auth:any) => {
   const options = configureGetOptions(url, auth);
   return getAsync(options);
 };

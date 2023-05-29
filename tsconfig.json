@@ -15,6 +15,7 @@
     "noImplicitReturns": true,
     //"types": ["node"],
     "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": false,
     "lib": [
       "dom",
       "es2017",

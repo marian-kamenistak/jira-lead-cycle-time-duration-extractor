@@ -32,6 +32,40 @@ in different visualization tools, such as Tableau, Looker, Power BI, etc.
 
 ***
 
+# Install
+There are two options for running this extract utility: either as a standalone exectuable or as a nodejs app.
+
+## Option 1: Using the Standalone Executable
+1. Download the "run.js" and the "config.yaml" files from the repository by choosing them and clicking on "Download raw file", or from [releases](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/releases/). Put both files in the same directory. Which local directory you choose doesn’t matter as long as the two files are co-located.
+2. Download and install the standard Node.js app from https://nodejs.org/en/download
+3. Edit the config file and customize it for your specific Jira instance according to the instructions in this README. 
+4. Open a command prompt, move to the directory where both files are located and run it by simply typing ```node run.js```
+5. If you receive an ``` Error: Invalid URI``` error, make sure you definet the right Jira config parameters in the config.yaml file.
+5. If the program succeeds, the output data file will be written in the same directory as the executable file.
+
+## Option 2: Clone the source code
+
+1. Install git from https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+2. Clone the project using git to your local device using command ```git clone https://github.com/ActionableAgile/jira-to-analytics.git```
+3. install npm tool from https://nodejs.org/en/download
+4. in the project folder, install all the dependent packages using command
+
+    npm install
+    npm run build
+    configure the config.yaml file for your connection
+    npm run extact
+
+
+### Run configuration parameters
+These flags are the same whether you are using the standalone executable or node form of the extraction tool.
+
+-i specifies input config file name (defaults to config.yaml)
+-u specifies the username for the connection to Jira (by default the username in the config.yaml is used)
+-p specifies the password for the connection to Jira (by default the password in the config.yaml is used)
+
+***
+
+
 # Configuration
 
 Edit config.yaml file
@@ -101,32 +135,3 @@ In order to add more of your custom parameters, see what other data fields an is
 For more information about Jira fields and the structure, see Jira doc: Jira API doc: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-fields/#api-group-issue-fields
 
 ***
-
-
-# Install
-1. Install git from https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-2. Clone the project using git to your local device using command ```git clone https://github.com/ActionableAgile/jira-to-analytics.git```
-3. install npm tool from https://nodejs.org/en/download
-4. in the project folder, install all the dependent packages using command
-
-    npm install
-
-# Run the tool
-
-    npm run build
-    configure the config.yaml file for your connection
-    npm run extact
-
-
-## Run configuration parameters
-These flags are the same whether you are using the standalone executable or node form of the extraction tool.
-
--i specifies input config file name (defaults to config.yaml)
-
--u specifies the username for the connection to Jira (by default the username in the config.yaml is used)
-
--p specifies the password for the connection to Jira (by default the password in the config.yaml is used)
-
-To run the tool with parameters, use the following scheme:
-
-    npm run extract -- --i SF/config.yaml

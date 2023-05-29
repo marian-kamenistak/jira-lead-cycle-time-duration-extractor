@@ -38,8 +38,8 @@ const getPassword = async (): Promise<string> => {
     type: 'password',
     name: 'password'
   };
-  const answers = await prompt(passwordQuestion);
-  const password: string = answers['password'];
+  const answers: {[index: string]:any} = await prompt(passwordQuestion);
+  const password: string = answers['password'] as string;
   return password;
 };
 

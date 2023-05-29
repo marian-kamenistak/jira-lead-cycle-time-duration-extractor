@@ -5,11 +5,11 @@ const toDate = (dateStr:string):Date => {
   return dateStr ? new Date(dateStr) : null;
 }
 
-export function round1dec(num){
+export function round1dec(num:number){
   return num !== null ? Math.round(num * 10) / 10 : null;
 }
   
-export function round2dec(num){
+export function round2dec(num:number){
   return num !== null ? Math.round(num * 10) / 10 : null;
 }
 

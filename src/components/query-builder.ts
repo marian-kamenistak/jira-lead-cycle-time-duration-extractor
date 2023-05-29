@@ -5,7 +5,7 @@
     jql: string;
   };
   
-  const buildApiUrl = (rootUrl) => `${rootUrl}/rest/api/latest`; 
+  const buildApiUrl = (rootUrl:string) => `${rootUrl}/rest/api/latest`; 
   
   const buildJiraSearchQueryUrl = ({ apiRootUrl, startIndex, batchSize, jql}: QueryBuilderOptions): string => {
     const query = `${buildApiUrl(apiRootUrl)}/search?jql=${encodeURIComponent(jql)}&startAt=${startIndex}&maxResults=${batchSize}&expand=changelog`;

@@ -42,7 +42,7 @@ class JiraExtractor {
     return true;
   }
 
-  async extractAll(statusHook = ((n: number) => null), debug: boolean = false): Promise<JiraWorkItem[]> {
+  async extractAll(statusHook = ((n: number):any => null), debug: boolean = false): Promise<JiraWorkItem[]> {
     await this.validate();
 
     const config: JiraExtractorConfig = this.config;
@@ -125,7 +125,7 @@ class JiraExtractor {
     return csv;
   };
 
-  private async getIssuesFromJira(jql, startIndex, batchSize): Promise<JiraApiIssue[]> {
+  private async getIssuesFromJira(jql:string, startIndex:number, batchSize:number): Promise<JiraApiIssue[]> {
     const queryUrl = this.getJiraIssuesQueryUrl(jql, startIndex, batchSize);
     const auth = this.config.connection.auth;
     const json: JiraApiIssueQueryResponse = await getJson(queryUrl, auth);

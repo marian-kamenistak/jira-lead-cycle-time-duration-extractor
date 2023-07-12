@@ -59,7 +59,6 @@ There are two options for running this extract utility: either as a standalone e
     
     npm run extact
 
-
 ### Run configuration parameters
 These flags are the same whether you are using the standalone executable or node form of the extraction tool.
 
@@ -69,8 +68,13 @@ These flags are the same whether you are using the standalone executable or node
 
 -p specifies the password for the connection to Jira (by default the password in the config.yaml is used)
 
-***
+### Node js troubleshooting
+npm cache clean -f
+npm install -g n
+n stable
 
+
+***
 
 # Configuration
 

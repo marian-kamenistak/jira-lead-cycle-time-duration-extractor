@@ -86,9 +86,9 @@ The config file we use conforms to the YAML format standard (http://yaml.org/spe
 ## Connection
 
     Connection:
-        Domain: https://<subdomain>.atlassian.net/ Open Jira in your browser and see the domain.
-        Username: <email>
-        Password: <Jira API token> your Jira API Token can be generated at https://id.atlassian.com/manage-profile/security/api-tokens
+        Domain: https://<subdomain>.atlassian.net/ Open Jira in your browser and see the subdomain name in the browser link.
+        Username: <email> Use an email you use to access Jira.
+        Password: <Jira API token> is your Jira API Token. The token can be generated at https://id.atlassian.com/manage-profile/security/api-tokens
 
 ### OAuth Support
 OAuth is also supported. You must get the access token and access token secret on your own by completing the OAuth authorization.

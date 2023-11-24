@@ -163,20 +163,20 @@ For more information about Jira fields and the structure, see Jira doc: Jira API
 
 VSCode launch.json
 
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}/dist/cli.js",
-            "args": [
-                "-i", "<config dir>/config.yaml"
-            ]
-        }
-    ]
-}
+    {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Program",
+                "skipFiles": [
+                    "<node_internals>/**"
+                ],
+                "program": "${workspaceFolder}/dist/cli.js",
+                "args": [
+                    "-i", "<config dir>/config.yaml"
+                ]
+            }
+        ]
+    }

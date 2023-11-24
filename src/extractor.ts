@@ -73,6 +73,9 @@ class JiraExtractor {
       const start: number = i * actualBatchSize;
       const issues: JiraApiIssue[] = await this.getIssuesFromJira(jql, start, actualBatchSize);
       const workItemBatch = issues.map(this.convertIssueToWorkItem);
+      if(i === 0){
+        console.debug(JSON.stringify(issues[0].fields));
+      }
       jiraWorkItemsAccumulator.push(...workItemBatch);
       hook(Math.max(actualBatchSize / totalJiraCount) * 100);
     }

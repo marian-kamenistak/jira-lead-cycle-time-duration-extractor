@@ -69,9 +69,9 @@ These flags are the same whether you are using the standalone executable or node
 -p specifies the password for the connection to Jira (by default the password in the config.yaml is used)
 
 ### Node js troubleshooting
-npm cache clean -f
-npm install -g n
-n stable
+    npm cache clean -f
+    npm install -g n
+    n stable
 
 
 ***

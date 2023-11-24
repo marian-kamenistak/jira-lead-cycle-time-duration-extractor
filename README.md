@@ -47,7 +47,7 @@ There are two options for running this extract utility: either as a standalone e
 ## Option 2: Clone the source code
 
 1. Install git from https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-2. Clone the project using git to your local device using command ```git clone https://github.com/ActionableAgile/jira-to-analytics.git```
+2. Clone the project using git to your local device using command ```git clone https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor.git```
 3. install npm tool from https://nodejs.org/en/download
 4. in the project folder, install all the dependent packages using command
 

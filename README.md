@@ -133,6 +133,11 @@ Here are the standard Jira fields that you can use:
           ParentId: parent.key
           ParentName: parent.fields.summary
           ParentType: parent.fields.issuetype.name
+          Timeoriginalestimate: timeoriginalestimate
+          Sprint: customfield_10105.last.name        
+          #Service: customfield_18801.value
+          #Account: customfield_20397.value
+            
 
 In order to add more of your custom parameters, see what other data fields an issue contains. You can use 
 

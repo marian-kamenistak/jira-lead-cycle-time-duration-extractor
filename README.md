@@ -136,9 +136,17 @@ Here are the standard Jira fields that you can use:
           Timeoriginalestimate: timeoriginalestimate
           Sprint: customfield_10105.last.name        
           Priority: priority.name
-          Project: project.name                
+          Project: project.name          
           #Service: customfield_18801.value
           #Account: customfield_20397.value
+          Timeoriginalestimate: timeoriginalestimate    
+          Timeestimate: timeestimate
+          Timespent: timespent
+          AggreagateTimeoriginalestimate: aggregatetimeoriginalestimate
+          AggreagateTimeestimate: aggregatetimeestimate
+          AggreagateTimespent: aggregatetimespent
+          Workratio: workratio
+
             
 
 In order to add more of your custom parameters, see what other data fields an issue contains. You can use 
@@ -152,3 +160,23 @@ In order to add more of your custom parameters, see what other data fields an is
 For more information about Jira fields and the structure, see Jira doc: Jira API doc: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-fields/#api-group-issue-fields
 
 ***
+
+VSCode launch.json
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/dist/cli.js",
+            "args": [
+                "-i", "<config dir>/config.yaml"
+            ]
+        }
+    ]
+}

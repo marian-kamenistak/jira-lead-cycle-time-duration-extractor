@@ -51,13 +51,13 @@ There are two options for running this extract utility: either as a standalone e
 3. install npm tool from https://nodejs.org/en/download
 4. in the project folder, install all the dependent packages using command
 
-    npm install    
+       npm install    
     
-    npm run build
+       npm run build
     
-    configure the config.yaml file for your connection
+       configure the config.yaml file for your connection
     
-    npm run extract
+       npm run extract
 
 ### Run 'npm run extract' with configuration parameters
 These flags are the same whether you are using the standalone executable or node form of the extraction tool.
@@ -90,15 +90,6 @@ The config file we use conforms to the YAML format standard (http://yaml.org/spe
         Username: <email> Use an email you use to access Jira.
         Password: <Jira API token> is your Jira API Token. The token can be generated at https://id.atlassian.com/manage-profile/security/api-tokens
 
-### OAuth Support
-OAuth is also supported. You must get the access token and access token secret on your own by completing the OAuth authorization.
-
-    Connection:
-        Domain: https://myjiradomain.com
-        Consumer Key: applicationkey
-        Private Key: 
-        Token: 
-        Token Secret: 
 
 ### Jira connection test
 in your console, run:

@@ -38,7 +38,7 @@ There are two options for running this extract utility: either as a standalone e
 
 ## Option 1: Using the Standalone Executable
 1. Download and install the Node.js app from https://nodejs.org/en/download
-2. Download the latest "SourceCode.zip" and unpack the whole zip. You should have a "run.js" and "config.yaml" files in the same directory.
+2. Download the latest "SourceCode.zip" from [releases](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/releases/) and unpack the whole zip. You should have a "run.js" and "config.yaml" files in the same directory.
 3. Edit the config.yaml file and customize it for your specific Jira instance according to the instructions in this README below. 
 4. Open a command prompt, move to the directory where both "run.js" and "config.yaml" files are located and run it by simply typing ```node run.js```
 5. If you receive an ``` Error: Invalid URI``` error, make sure you define the right Jira config parameters in the config.yaml file.

@@ -57,9 +57,9 @@ There are two options for running this extract utility: either as a standalone e
     
     configure the config.yaml file for your connection
     
-    npm run extact
+    npm run extract
 
-### Run configuration parameters
+### Run 'npm run extract' with configuration parameters
 These flags are the same whether you are using the standalone executable or node form of the extraction tool.
 
 -i specifies input config file name (defaults to config.yaml)

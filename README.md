@@ -135,6 +135,8 @@ Here are the standard Jira fields that you can use:
           ParentType: parent.fields.issuetype.name
           Timeoriginalestimate: timeoriginalestimate
           Sprint: customfield_10105.last.name        
+          Priority: priority.name
+          Project: project.name                
           #Service: customfield_18801.value
           #Account: customfield_20397.value
             

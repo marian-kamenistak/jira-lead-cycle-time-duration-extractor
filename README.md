@@ -55,7 +55,7 @@ There are two options for running this extract utility: either as a standalone e
     
        npm run build
     
-       configure the config.yaml file for your connection
+   configure the config.yaml file for your connection
     
        npm run extract
 

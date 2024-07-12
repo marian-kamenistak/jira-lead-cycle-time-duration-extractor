@@ -12,6 +12,6 @@ tmp
 *.mac
 *.exe
 *.linux
-output.csv
+output*.csv
 groupon
 

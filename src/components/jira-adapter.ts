@@ -6,6 +6,7 @@ const configureGetOptions = (url: string, auth: Auth): any => {
   const options = {
     url,
     json: true,
+    insecureHTTPParser: true,
   };
   // Handle OAuth (assumes OAuth handshake has been completed beforehand)
   if (auth.oauth && auth.oauth.private_key && auth.oauth.token) {
@@ -14,16 +15,19 @@ const configureGetOptions = (url: string, auth: Auth): any => {
   } else if (auth.username && auth.password) {
     // Handle Basic Auth
     const headers = {
-      'Authorization': `Basic ${Buffer.from(auth.username + ':' + auth.password).toString('base64')}`,
+      //'Authorization': `Basic ${Buffer.from(auth.username + ':' + auth.password).toString('base64')}`, // server
+      'Authorization': `Bearer ${auth.password}`, // cloud
     };
     Object.assign(options, { headers });
   }
   // Handle Custom Self signed Cert
+  /*
   if (existsSync('ca.cert.pem')) {
     const ca = readFileSync('ca.cert.pem');
     const agentOptions = { ca };
     Object.assign(options, { agentOptions });
   }
+  */
   return options;
 };
 

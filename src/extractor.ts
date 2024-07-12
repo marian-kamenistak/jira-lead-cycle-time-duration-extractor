@@ -16,7 +16,7 @@ class JiraExtractor {
 
   constructor(config: JiraExtractorConfig) {
     this.config = config;
-    this.config.batchSize = 25; 
+    this.config.batchSize = 15; 
   }
 
   async validate(): Promise<boolean> {
@@ -72,14 +72,16 @@ class JiraExtractor {
     for (let i = 0; i < totalBatches; i++) {
       const start: number = i * actualBatchSize;
       const issues: JiraApiIssue[] = await this.getIssuesFromJira(jql, start, actualBatchSize);
-      const workItemBatch = issues.map(this.convertIssueToWorkItem);
-      if(i === 0){
-        console.debug(JSON.stringify(issues[0].fields));
+      if (issues){
+        if(i === 0){
+          console.debug("First sample: " + JSON.stringify(issues[0].fields));
+        }
+        const workItemBatch = issues.map(this.convertIssueToWorkItem);
+        jiraWorkItemsAccumulator.push(...workItemBatch);
+        hook(Math.max(actualBatchSize / totalJiraCount) * 100);
       }
-      jiraWorkItemsAccumulator.push(...workItemBatch);
-      hook(Math.max(actualBatchSize / totalJiraCount) * 100);
     }
-    hook(100);
+    hook(150);
 
     return jiraWorkItemsAccumulator;
   };
@@ -96,7 +98,7 @@ class JiraExtractor {
   }
 
   private getHeaderStageNames(stageNames:string[]):string[]{
-    return stageNames.map((a) => `Stage ${a}`);
+    return stageNames.map((a) => `Stage ${a} days`);
   }
 
   private getHeaderStageStartDateNames(stageNames:string[]):string[]{
@@ -132,8 +134,11 @@ class JiraExtractor {
     const queryUrl = this.getJiraIssuesQueryUrl(jql, startIndex, batchSize);
     const auth = this.config.connection.auth;
     const json: JiraApiIssueQueryResponse = await getJson(queryUrl, auth);
+    console.error(` Parsing issues ${startIndex} .. ${(startIndex+batchSize) }`);
     if (!json.issues) {
-      throw new Error('Could not retrieve issues from object');
+      console.error("Issue sequence not parsed due to a timeout", JSON.stringify(json), jql, "startIndexstartIndex: "+startIndex, "batchSize: "+batchSize);
+      //throw new Error('Could not retrieve issues from object');
+      return null;
     }
     return json.issues;
   }

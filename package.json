@@ -8,7 +8,7 @@
   "scripts": {
     "build": "tsc",
     "deploy": "npm run build && browserify dist/cli.js --node --standalone rawjs > run.js",
-    "extract": "node dist/cli",
+    "extract": "node --insecure-http-parser dist/cli",
     "tsc:w": "tsc -w",
     "tsc:version": "tsc --version",
     "start": "npm run tsc:w",

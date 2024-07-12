@@ -55,7 +55,7 @@ There are two options for running this extract utility: either as a standalone e
     
        npm run build
     
-       configure the config.yaml file for your connection
+   configure the config.yaml file for your connection
     
        npm run extract
 
@@ -86,7 +86,7 @@ The config file we use conforms to the YAML format standard (http://yaml.org/spe
 ## Connection
 
     Connection:
-        Domain: https://<subdomain>.atlassian.net/ Open Jira in your browser and see the subdomain name in the browser link.
+        Domain: https://<your jira domain>/ Open Jira in your browser and see the domain name in the browser link.
         Username: <email> Use an email you use to access Jira.
         Password: <Jira API token> is your Jira API Token. The token can be generated at https://id.atlassian.com/manage-profile/security/api-tokens
 

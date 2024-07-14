@@ -42,7 +42,9 @@ const getAttributes = (fields: any, attributesRequested: string[]): { [val: stri
       if(nextData === null || nextData === undefined){
         nextData = ''; break;
       }
-      nextData = nextData[nextNodeKey];
+      if (! (typeof nextData === 'string') && ! (typeof nextData ===  'number')){
+        nextData = nextData[nextNodeKey];
+      }
       if(nextData !== undefined && Array.isArray(nextData)){
         const lastNodesKey:string[] = i < nestedAttrKeys.length-1 ? nestedAttrKeys.slice(i+1, nestedAttrKeys.length) : null;
         if(nextData && nextData.length > 0 && lastNodesKey && lastNodesKey.length >= 1 && (lastNodesKey[1] === 'outwardIssue' || lastNodesKey[1] === 'inwardIssue')){ //TODO: fix the hack how we filter linked issues.

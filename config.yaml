@@ -24,10 +24,7 @@ Attributes:
       ParentType: parent.fields.issuetype.name
       AssigneeName: assignee.displayName
       LinksToOutwardKey: issuelinks.first.outwardIssue.key
-      LinksToInwardKey: issuelinks.first.inwardIssue.key
-      #Timeoriginalestimate: timeoriginalestimate
-      #Environment: customfield_10081.last.value
-      #Platform: customfield_10084.last.value    
+      LinksToInwardKey: issuelinks.first.inwardIssue.key     
       Timeoriginalestimate: timeoriginalestimate    
       Timeestimate: timeestimate
       Timespent: timespent
@@ -35,3 +32,8 @@ Attributes:
       AggreagateTimeestimate: aggregatetimeestimate
       AggreagateTimespent: aggregatetimespent
       Workratio: workratio
+      #Environment: customfield_10081.last.value
+      #HierarchyProductItemName: customfield_18701.fields.summary
+      #HierarchyProductItemKey: customfield_18701.key
+      #HierarchyEpicType: customfield_21401.value
+      

@@ -94,7 +94,7 @@ The config file we use conforms to the YAML format standard (http://yaml.org/spe
 ### Jira connection test
 in your console, run:
 
-    curl -v https://<subdomain>.atlassian.net/ --user <email>:<Jira API token>
+    curl -v https://<yourdomain>.atlassian.net/ --user <email>:<Jira API token>
 
 
 ## Jira issues selection

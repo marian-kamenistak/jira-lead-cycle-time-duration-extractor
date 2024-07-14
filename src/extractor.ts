@@ -16,7 +16,7 @@ class JiraExtractor {
 
   constructor(config: JiraExtractorConfig) {
     this.config = config;
-    this.config.batchSize = 15; 
+    this.config.batchSize = 5; 
   }
 
   async validate(): Promise<boolean> {

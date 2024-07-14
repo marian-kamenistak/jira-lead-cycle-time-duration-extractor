@@ -5,7 +5,7 @@ Connection:
 
 
 JQL: 
-    Query: created >= -365d order by created DESC
+    Query: resolutiondate > -12w order by resolutiondate DESC
     #Query: key=DEV-197
     #Query: project in ("DEV1", "DEV2")
         

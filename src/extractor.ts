@@ -16,7 +16,7 @@ class JiraExtractor {
 
   constructor(config: JiraExtractorConfig) {
     this.config = config;
-    this.config.batchSize = 15; 
+    this.config.batchSize = 5; 
   }
 
   async validate(): Promise<boolean> {
@@ -49,7 +49,7 @@ class JiraExtractor {
     const hook = statusHook;
     const apiRootUrl: string = config.connection.url;
     const auth: Auth = config.connection.auth;
-    const batchSize: number = config.batchSize || 25;
+    const batchSize: number = config.batchSize || 10;
     const jql: string = this.getJQL();
 
     if (debug) {
@@ -111,6 +111,7 @@ class JiraExtractor {
 
 
   toCSV(workItems: JiraWorkItem[]) {
+    console.log(" Extracting to csv ..")
     const SEP:string = ';';
 
     let attributes = this.config.attributes || {};

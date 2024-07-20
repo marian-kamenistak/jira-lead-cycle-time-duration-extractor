@@ -1,11 +1,11 @@
 Connection:
     Domain: https://<your Jira domain>/ #Open Jira in your browser and see the domain name in the browser link, ie. jira.microsoft.com or microsoft.atlassian.net
-    Username: <email> #Use an email you use to access Jira.
+    Username: <email> #Use an email you use to access Jira. See https://jira.eurowag.com/secure/ViewProfile.jspa.
     Password: <Jira API token> # is your Jira API Token. The token can be generated at https://id.atlassian.com/manage-profile/security/api-tokens
 
 
 JQL: 
-    Query: created >= -365d order by created DESC
+    Query: resolutiondate > -12w order by resolutiondate DESC
     #Query: key=DEV-197
     #Query: project in ("DEV1", "DEV2")
         
@@ -24,10 +24,7 @@ Attributes:
       ParentType: parent.fields.issuetype.name
       AssigneeName: assignee.displayName
       LinksToOutwardKey: issuelinks.first.outwardIssue.key
-      LinksToInwardKey: issuelinks.first.inwardIssue.key
-      #Timeoriginalestimate: timeoriginalestimate
-      #Environment: customfield_10081.last.value
-      #Platform: customfield_10084.last.value    
+      LinksToInwardKey: issuelinks.first.inwardIssue.key     
       Timeoriginalestimate: timeoriginalestimate    
       Timeestimate: timeestimate
       Timespent: timespent
@@ -35,3 +32,8 @@ Attributes:
       AggreagateTimeestimate: aggregatetimeestimate
       AggreagateTimespent: aggregatetimespent
       Workratio: workratio
+      #Environment: customfield_10081.last.value
+      #HierarchyProductItemName: customfield_18701.fields.summary
+      #HierarchyProductItemKey: customfield_18701.key
+      #HierarchyEpicType: customfield_21401.value
+      

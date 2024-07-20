@@ -1,6 +1,22 @@
 # README #
 
-Production-ready. This is a tool designed to extract data from JIRA and convert it into Excel or CSV format. It automates the inclusion of essential data and **enhances it with flow status or stage start dates and durations with no further setting required**. Consequently, it enables easy calculation and visualization of **cycle time, lead time, and velocity**.
+Production-ready. This tool is designed to extract data from JIRA and convert it into Excel or CSV format. Automatically, it includes all essential stage (ie. in dev, in code review, in testing) duration data and enhances it with flow status and stage start dates with no further setting required. Consequently, it enables easy calculation and visualization of cycle time, lead time, and velocity.
+
+Consequently, data is ready for further analytics and visualization in Google Sheet charts, Excel, Tableau, Looker, or Power BI. 
+
+# Analytics
+With obtained data, we can explore/analyze team efficiency metrics
+ - DORA metrics: lead time or cycle time, deployment frequency, mean time to recover, change failure rate
+ - Investment allocation and roadmap contribution by labels or epic links
+ - Number of backtracks
+ - Sprint completion
+ - Throughput and Velocity
+
+|  Power BI and Tableau - Real case studies |   |
+| ------------- | ------------- |
+| ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/metrics%20dashboard%20team%20efficiency.png) | ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/story%20lead%20time%20inno%20dashboard.png) |
+| ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/mews%20dashboard.png) | ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/team%20productivity%20lead%20time%20dashboard%20ksk.png)|
+| ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/DORA%20metrics%20dashboard%20rhlk.png) |  ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/company%20scroecard.png)|
 
 
 # Output
@@ -9,14 +25,7 @@ See an example of a generated output file in [examples/output.csv](https://githu
 ![data](example/img/data%20table.png)
 
 
-# Analytics
-With obtained data, we can explore/analyse teams efficiency metrics
- - Lead time
- - Cycle time
- - Throughput
- - Velocity
  
-in different visualization tools, such as Tableau, Looker, Power BI, etc.
 
 ### Cycle time drill-down
 Spread between development, code review, testing, validation and deployment.

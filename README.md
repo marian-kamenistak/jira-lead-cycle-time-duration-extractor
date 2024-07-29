@@ -187,3 +187,11 @@ For more information about Jira fields and the structure, see Jira doc: Jira API
 3. https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/releases -> Draft new release
 - with anew label
 - set as latest release
+
+
+# Author
+Marian Kamenistak - 🚀 Building Silicon Valley in Central Europe « 🎓 Founder and Chief Coach at Engineering Leaders Community « 💰 $200M+ Series A-D Fractional VP Engineering « Lecturer/Moderator/Speaker
+
+[Engineering Leaders Community](https://www.engineeringleaders.cz) to grow Engineering Managers in Software companies,
+and
+[Engineering Leaders Hub: Our mission is to create a mini Silicon Valley in Central Europe. We're boosting engineering productivity by elevating our Engineering Leadership talent pool](https://www.kamenistak.com/).

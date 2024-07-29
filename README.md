@@ -161,7 +161,7 @@ For more information about Jira fields and the structure, see Jira doc: Jira API
 
 ***
 
-VSCode launch.json
+### VSCode launch.json setting
 
     {
         "version": "0.2.0",
@@ -180,3 +180,10 @@ VSCode launch.json
             }
         ]
     }
+
+### Release guide
+1. npm run deploy
+2. commit run.js
+3. https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/releases -> Draft new release
+- with anew label
+- set as latest release

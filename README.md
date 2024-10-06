@@ -12,8 +12,9 @@ With obtained data, we can explore/analyze team efficiency metrics
  - Sprint completion
  - Throughput and Velocity
 
-|  Power BI and Tableau - Real case studies |   |
+|  Teams Efficiency dashboards - Real case studies | Teams Efficiency rating |
 | ------------- | ------------- |
+| ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/Trvs%20dashboard%20trial.png) | ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/Teams%20rating.png) |
 | ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/metrics%20dashboard%20team%20efficiency.png) | ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/story%20lead%20time%20inno%20dashboard.png) |
 | ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/mews%20dashboard.png) | ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/team%20productivity%20lead%20time%20dashboard%20ksk.png)|
 | ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/DORA%20metrics%20dashboard%20rhlk.png) |  ![data](https://github.com/marian-kamenistak/jira-lead-cycle-time-duration-extractor/blob/main/example/img/company%20scroecard.png)|

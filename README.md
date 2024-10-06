@@ -1,5 +1,7 @@
 # README #
 
+# performing.engineering
+
 Production-ready. This tool is designed to extract data from JIRA and convert it into Excel or CSV format. Automatically, it includes all essential stage (ie. in dev, in code review, in testing) duration data and enhances it with flow status and stage start dates with no further setting required. Consequently, it enables easy calculation and visualization of cycle time, lead time, and velocity.
 
 Consequently, data is ready for further analytics and visualization in Google Sheet charts, Excel, Tableau, Looker, or Power BI. 

@@ -1,6 +1,6 @@
 import { DurationIntervals, JiraExtractorConfig } from '../types';
 
-export const numTo2 = (s:number): string => s < 9 ? "0"+s : s.toString();
+export const numTo2 = (s:number): string => s <= 9 ? "0"+s : s.toString();
 
 export const dateToString = (date: Date): string => `${date.getUTCFullYear()}-${numTo2(date.getUTCMonth() + 1)}-${numTo2(date.getUTCDate())} ${numTo2(date.getUTCHours())}:${numTo2(date.getUTCMinutes())}:${numTo2(date.getSeconds())}`;
 
